@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>HamsterTracker</title>
+   <title>Hamster Tracker</title>
 
    <link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
    <link rel="stylesheet" href="css/app.css">
@@ -39,4 +39,52 @@
          </div>
       </div>
    </section>
+
+   <section data-role="page" id="recent-page">
+      <div data-role="main">
+         <div class="map-icon-test icon" style="position:absolute;left:20vw;top:40vh;font-size:2em" data-activate="#recent-test-modal">
+            <img src="img/icon/logo1.png" alt="">
+         </div>
+
+
+         <div class="modal" id="recent-test-modal">
+            <div class="modal-popup small" data-deactivate="#recent-test-modal">
+               <div class="modal-body">Hamster</div>
+            </div>
+         </div>
+      </div>
+      <footer data-role="footer" data-template="#footer-template"></footer>
+   </section>
+
+   <section data-role="page" id="list-page">
+      <header data-role="header">
+         <h1>Hamster Search</h1>
+         <ul>
+            <li class="flex-stretch"></li>
+            <li><a href="#" class="js-list-add-animal"
+               data-activate="#list-add-modal">&plus;</a></li>
+         </ul>
+      </header>
+      <div data-role="main"><div class="overscroll">
+         <!-- ul>li*10>a[href=#animal-profile-page]>{Animal $} -->
+         <ul>
+            <li><a href="#animal-profile-page">Hamster 1</a></li>
+            <li><a href="#animal-profile-page">Hamster 2</a></li>
+            <li><a href="#animal-profile-page">Hamster 3</a></li>
+            <li><a href="#animal-profile-page">Hamster 4</a></li>
+            <li><a href="#animal-profile-page">Hamster 5</a></li>
+            <li><a href="#animal-profile-page">Hamster 6</a></li>
+            <li><a href="#animal-profile-page">Hamster 7</a></li>
+            <li><a href="#animal-profile-page">Hamster 8</a></li>
+            <li><a href="#animal-profile-page">Hamster 9</a></li>
+            <li><a href="#animal-profile-page">Hamster 10</a></li>
+            <li data-template="#animal-link-template"></li>
+            <li data-template="#animal-link-template"></li>
+            <li data-template="#animal-link-template"></li>
+            <li data-template="#animal-link-template"></li>
+         </ul>
+      </div></div>
+      <footer data-role="footer" data-template="#footer-template"></footer>
+
+      
 

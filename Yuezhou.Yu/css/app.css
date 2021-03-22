@@ -1,1 +1,81 @@
-a
+/* CSS RESET */
+
+*, *::after, *::before {
+   box-sizing:border-box;
+}
+
+:root {
+   --font-sans:'PT Sans', sans-serif;
+   --font-serif:Cambria, Georgia, serif;
+   
+   --color-neutral-light:#79554878;
+   --color-neutral-medium:##79554878;
+   --color-neutral-dark:#4c1907d1;
+
+   --color-main-light:#e5f1f2;
+   --color-main-medium:#4ba0a8;
+   --color-main-dark:#0a4349;
+
+   --color-white:#fff;
+   --color-black:#111;
+
+   --header-height:3rem;
+}
+
+
+/* Layout Classes */
+
+.hidden { display:none; }
+
+.display-flex { display:flex; }
+.display-block { display:block; }
+.display-inline-flex { display:inline-flex; }
+.display-inline-block { display:inline-block; }
+
+.flex-stretch { flex:1 1 auto; }
+.flex-none { flex:none; }
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+.flex-vertical{flex-direction: column;}
+
+
+/* PAGE ELEMENTS */
+[data-role="page"].ui-page-active {
+   display:flex;
+   flex-direction:column;
+   position:fixed;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   overflow:hidden;
+}
+[data-role="main"] {
+   flex: 1 1 100%;
+   overflow:hidden;
+   position:relative;
+}
+[data-role="footer"],
+[data-role="header"] {
+   flex: none;
+   height: var(--header-height);
+   line-height: var(--header-height);
+   border-width:0;
+   background-color: var(--color-white);
+   box-shadow:0 0 5px rgba(0,0,0,0.2);
+   position:relative;
+   overflow:hidden;
+}
+
+.ui-header .ui-title {
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   text-align:center;
+   margin:0;
+   font-size:1rem;
+   padding:0;
+}
