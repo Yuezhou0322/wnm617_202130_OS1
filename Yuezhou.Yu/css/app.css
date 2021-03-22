@@ -97,7 +97,7 @@ overscroll {
    line-height: var(--header-height);
    border-width:0;
    background-color: var(--color-white);
-   box-shadow:0 0 5px rgba(0,0,0,0.2);
+   box-shadow:0 0 5px rgba(0,0,0,0.2);jpg
    position:relative;
    overflow:hidden;
 }
@@ -112,6 +112,13 @@ overscroll {
    margin:0;
    font-size:1rem;
    padding:0;
+}
+
+#signin-page{
+	background-image: url(../img/background2.jpg);
+}
+#list-page{
+	background-image: url(../img/background1.png);
 }
 
 /* Navigation Elements */
@@ -312,7 +319,7 @@ overscroll {
 /* remove this later */
 .animal-top,
 #recent-page [data-role='main'] {
-  background-image: url('../img/map.png');
+  background-image: url('../img/map.jpg');
   background-position:center;
   background-size:cover;
 }
