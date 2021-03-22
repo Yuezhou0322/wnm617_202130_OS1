@@ -84,6 +84,7 @@ overscroll {
    width:100%;
    height:100%;
    overflow:hidden;
+   color: #9e7363;
 }
 [data-role="main"] {
    flex: 1 1 100%;
@@ -292,6 +293,7 @@ overscroll {
 .title-icons .title,
 .title-icons .icon {
   display:block;
+  color:#86716a;
 }
 .title-icons .icon {
   line-height:calc(var(--header-height)*(2/3));
