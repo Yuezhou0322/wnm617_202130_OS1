@@ -121,6 +121,9 @@ overscroll {
 #list-page{
 	background-image: url(../img/background1.png);
 }
+#user-profile-page{
+	background-image: url(../img/profile.jpg)
+}
 
 /* Navigation Elements */
 .header a,
