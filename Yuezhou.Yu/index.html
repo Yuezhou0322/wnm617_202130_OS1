@@ -86,5 +86,122 @@
       </div></div>
       <footer data-role="footer" data-template="#footer-template"></footer>
 
-      
+
+      <div class="modal" id="list-add-modal">
+         <div class="modal-back" data-deactivate="#list-add-modal"></div>
+         <form class="modal-popup" data-ajax="false" id="list-add-form">
+            <div class="modal-head">Hamster</div>
+            <div class="modal-body">
+               <div class="form-control">
+                  <label for="list-add-name" class="form-label">Name</label>
+                  <input class="form-input" type="text" id="list-add-name" data-role="none">
+               </div>
+               <div class="form-control">
+                  <label for="list-add-type" class="form-label">Type</label>
+                  <input class="form-input" type="text" id="list-add-type" data-role="none">
+               </div>
+               <div class="form-control">
+                  <label for="list-add-breed" class="form-label">Color</label>
+                  <input class="form-input" type="text" id="list-add-breed" data-role="none">
+               </div>
+            </div>
+            <div class="modal-foot display-flex">
+               <div class="flex-stretch"></div>
+               <div class="flex-none">
+                  <a href="#" data-deactivate="#list-add-modal">Submit</a>
+               </div>
+            </div>
+         </form>
+      </div>
+   </section>
+
+     <!-- USER DATA SECTION -->
+
+   <section data-role="page" id="user-profile-page">
+      <div data-role="main">
+         Profile
+
+         <div class="floater top right">
+            <a href="#" class="icon" data-activate="#user-settings-modal"><img src="img/icon/shishkabob.svg" alt=""></a>
+         </div>
+
+
+         <div class="modal" id="user-settings-modal">
+            <div class="modal-drawer right">
+               <div class="modal-head display-flex">
+                  <div class="flex-none">Settings</div>
+                  <div class="flex-stretch"></div>
+                  <div class="flex-none"><a href="#"data-deactivate="#user-settings-modal">&times;</a></div>
+               </div>
+               <div class="modal-body"><div class="overscroll">
+                  <ul>
+                     <li>Change Name</li>
+                     <li>Change Password</li>
+                     <li><a href="#" class="js-logout">Sign Out</a></li>
+                  </ul>
+               </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer data-role="footer" data-template="#footer-template"></footer>
+   </section>
+
+   <!--  ANIMAL DATA SECTION -->
+
+   <section data-role="page" id="animal-profile-page">
+      <div data-role="main" class="display-flex flex-vertical">
+         <div class="animal-top">
+
+            <div class="floater top left header no-touch" style="background-image: linear-gradient(180deg, #ffffff96, #ffffff00);">
+               <ul>
+                  <li class="flex-none do-touch"><a href="#" data-rel="back">Back</a></li>
+                  <li class="flex-stretch"></li>
+                  <li class="flex-none do-touch"><a href="#">Edit</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="header">
+            <ul>
+               <li class="flex-stretch"><a href="#">map</a></li>
+               <li class="flex-stretch"><a href="#">info</a></li>
+            </ul>
+         </div>
+         <div class="animal-bottom">
+            <div class="overscroll">
+               <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam qui officia aliquam inventore odit ipsa blanditiis unde officiis ullam, reprehenderit perferendis quasi animi explicabo incidunt rerum labore nisi optio ducimus, veniam voluptatibus omnis numquam quaerat eligendi beatae quisquam. Fugit nisi fugiat porro, quasi possimus, quis iure magnam? Architecto, nulla, quo.</p>
+               <p>Doloremque at laudantium vero, fugit culpa, ut. Perferendis eum porro dicta ad unde excepturi consequatur est sequi alias, consectetur ipsum perspiciatis soluta enim ullam, harum suscipit dolorem deserunt sunt deleniti accusantium optio quidem a. Laboriosam, consectetur quae temporibus aperiam necessitatibus excepturi ipsa, consequuntur eaque quia explicabo expedita minima enim ipsum!</p>
+               <p>Itaque sunt qui recusandae cumque natus, ea iusto! Quaerat odio optio ipsa quia veniam est deleniti labore perferendis error magnam obcaecati harum sunt nobis impedit temporibus dolore, dolorum magni ut saepe ducimus aspernatur libero ab dolorem at laboriosam. Suscipit et, voluptatem veniam doloribus quaerat aut obcaecati, fugiat deleniti quis repellat.</p>
+               <p>Cumque ut amet magnam ipsa repellat suscipit fuga eum minima dolorem eaque, veritatis voluptatibus nam facilis recusandae quas, laborum placeat ad nihil numquam eos voluptates odio, vel odit cupiditate. Corporis iste maiores atque velit saepe. Unde asperiores blanditiis eaque pariatur expedita atque, autem, hic ab, esse laboriosam quos, corporis sequi?</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+ <script type="text/template" id="footer-template">
+   <ul class="title-icons">
+      <li><a href="#recent-page">
+         <span class="icon"><img src="img/icon/map.svg" alt=""></span>
+         <span class="title">Recent</span>
+      </a></li>
+      <li><a href="#list-page">
+         <span class="icon"><img src="img/icon/list.svg" alt=""></span>
+         <span class="title">List</span>
+      </a></li>
+      <li><a href="#user-profile-page">
+         <span class="icon"><img src="img/icon/profile.svg" alt=""></span>
+         <span class="title">Profile</span>
+      </a></li>
+   </ul>
+   </script>
+
+   <script type="text/template" id="animal-link-template">
+   this is an animal link
+   </script>
+
+</body>
+</html>
+
 
