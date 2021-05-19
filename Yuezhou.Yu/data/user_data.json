@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Wendi Nielsen",
+    "username": "user1",
+    "email": "user1@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/758/fff/?text=user1",
+    "date_create": "2020-11-10 11:20:48"
+  },
+  {
+    "id": 2,
+    "name": "Peggy Day",
+    "username": "user2",
+    "email": "user2@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/807/fff/?text=user2",
+    "date_create": "2020-06-18 05:04:31"
+  },
+  {
+    "id": 3,
+    "name": "Reva Barton",
+    "username": "user3",
+    "email": "user3@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/828/fff/?text=user3",
+    "date_create": "2020-10-22 04:25:38"
+  },
+  {
+    "id": 4,
+    "name": "Buckley Macdonald",
+    "username": "user4",
+    "email": "user4@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/723/fff/?text=user4",
+    "date_create": "2020-05-09 09:40:06"
+  },
+  {
+    "id": 5,
+    "name": "Hilary Puckett",
+    "username": "user5",
+    "email": "user5@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/736/fff/?text=user5",
+    "date_create": "2020-08-19 05:04:59"
+  },
+  {
+    "id": 6,
+    "name": "Jarvis Calhoun",
+    "username": "user6",
+    "email": "user6@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/780/fff/?text=user6",
+    "date_create": "2020-07-02 12:25:41"
+  },
+  {
+    "id": 7,
+    "name": "Boyle Ortiz",
+    "username": "user7",
+    "email": "user7@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/778/fff/?text=user7",
+    "date_create": "2020-07-30 05:45:27"
+  },
+  {
+    "id": 8,
+    "name": "Janie Jensen",
+    "username": "user8",
+    "email": "user8@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/783/fff/?text=user8",
+    "date_create": "2021-04-16 09:08:43"
+  },
+  {
+    "id": 9,
+    "name": "Mari Langley",
+    "username": "user9",
+    "email": "user9@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/723/fff/?text=user9",
+    "date_create": "2020-02-15 01:32:42"
+  },
+  {
+    "id": 10,
+    "name": "Nettie Franklin",
+    "username": "user10",
+    "email": "user10@gmail.com",
+    "password": "md5(pass)",
+    "img": "https://via.placeholder.com/400/720/fff/?text=user10",
+    "date_create": "2020-03-04 07:45:55"
+  }
+]
