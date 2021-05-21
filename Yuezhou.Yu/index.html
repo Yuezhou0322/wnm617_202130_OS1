@@ -54,8 +54,14 @@
    <section data-role="page" id="recent-page">
       <div data-role="main">
          <div class="map"></div>
-         <div class="map-icon-test icon" style="position:absolute;left:20vw;top:40vh;font-size:2em" data-activate="#recent-test-modal">
-            <img src="img/icon/logo1.png" alt="">
+           <div class="floater bottom right" style="padding:1em">
+            <a href="#choose-animal-page" class="circle-button js-add-from-recent">&plus;</a>
+         </div>
+
+         <div class="floater top left" style="width:100%;padding:1em">
+            <form data-ajax="false" id="recent-search" class="hotdog hovering">
+               <input type="search" id="recent-search-value" data-role="none" placeholder="Search">
+            </form>
          </div>
 
 
