@@ -18,6 +18,10 @@
    <script src="js/forms.js"></script>
    <script src="js/parts.js"></script>
 
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB52y385Eq4IKWQkQ4KC8ejozw-ZRO70KY&libraries=&v=weekly"
+      async
+    ></script>
 
 
    <script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
@@ -49,6 +53,7 @@
 
    <section data-role="page" id="recent-page">
       <div data-role="main">
+         <div class="map"></div>
          <div class="map-icon-test icon" style="position:absolute;left:20vw;top:40vh;font-size:2em" data-activate="#recent-test-modal">
             <img src="img/icon/logo1.png" alt="">
          </div>
@@ -160,7 +165,6 @@
    <section data-role="page" id="animal-profile-page">
       <div data-role="main" class="display-flex flex-vertical">
          <div class="animal-top">
-
             <div class="floater top left header no-touch" style="background-image: linear-gradient(180deg, #ffffff96, #ffffff00);">
                <ul>
                   <li class="flex-none do-touch"><a href="#" data-rel="back">Back</a></li>
@@ -169,12 +173,20 @@
                </ul>
             </div>
          </div>
+         <div class="floater bottom right" style="font-size:1.5em">
+               <form class="icon" data-ajax="false" id="animal-update-image-form">
+                  <input type="file" id="animal-update-image-input" class="hidden" data-role="none">
+                  <label for="animal-update-image-input" style="margin:0"><img src="img/icon/pencil.svg" alt=""></label>
+               </form>
+            </div>
+         </div>
          <div class="header animal-nav">
             <ul>
                <li class="flex-stretch"><a href="#">map</a></li>
                <li class="flex-stretch"><a href="#">info</a></li>
             </ul>
          </div>
+
          <div class="animal-bottom">
             <div class="animal-bottom-section animal-map">
                <div class="map"></div>
