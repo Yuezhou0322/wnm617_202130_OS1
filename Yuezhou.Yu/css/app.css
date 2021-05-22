@@ -160,6 +160,10 @@ overscroll {
    line-height: var(--header-height);
 }
 
+[data-page-link].active {
+  background-color:var(--color-main-light);
+}
+
 
 /* FORM ELEMENTS */
 .form-control {
@@ -196,6 +200,54 @@ overscroll {
 .form-button:hover {
    text-decoration:none;
    background-color:var(--color-neutral-medium);
+}
+
+.form-select {
+   position: relative;
+}
+.form-select>select {
+   display:inline-block;
+   width:100%;
+   border-width:0;
+   background-color:var(--color-neutral-light);
+   padding:0.5em 2em 0.5em 1em;
+   border-radius:0.3em;
+   font:inherit;
+   outline:0;
+   position:relative;
+   overflow:hidden;
+   -webkit-appearance:none;
+}
+.form-select::after {
+   position:absolute;
+   top:50%;
+   right:0.5em;
+   content:'▼';
+   font-family:arial;
+   font-size:0.9em;
+   color:var(--color-neutral-dark);
+   pointer-events:none;
+   transform: translateY(-50%);
+}
+.hotdog {
+    display: inline-flex;
+    width: 100%;
+    border-width: 0;
+    background-color: var(--color-neutral-light);
+    border-radius: 2em;
+}
+.hotdog>input {
+    flex: 1;
+    background-color: transparent;
+    border-width: 0;
+    line-height: 2.5;
+    padding: 0 1em;
+    outline: 0;
+    font-size: inherit;
+}
+.hotdog.hovering {
+    background-color:var(--color-white);
+    box-shadow:1px 0 5px rgba(0,0,0,0.2)
 }
 
 /* MODAL */
@@ -271,6 +323,20 @@ overscroll {
   pointer-events:initial;
 }
 
+
+
+
+.modal-drawer.modal-card {
+  padding:1em;
+  box-shadow:none;
+}
+.modal-card .modal-body {
+  box-shadow:0 0 5px rgba(0,0,0,0.3);
+  border-radius:1em;
+}
+
+
+
 .modal-head,
 .modal-foot {
   background-color:var(--color-neutral-light);
@@ -319,6 +385,21 @@ overscroll {
   padding:1em;
   display:block;
 }
+
+
+.circle-button {
+  display:inline-block;
+  vertical-align:middle;
+  background-color:white;
+  box-shadow:2px 2px 5px rgba(0,0,0,0.2);
+  border-radius:50%;
+  height:var(--header-height);
+  line-height:var(--header-height);
+  width:var(--header-height);
+  text-align:center;
+  font-size:2em;
+}
+
 
 
 /* remove this later */
@@ -441,3 +522,26 @@ overscroll {
     padding: 2em;
 }
 
+.image-uploader.full {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+.image-uploader.full input{
+  display:none;
+}
+
+
+
+.filter-set {
+  overflow:auto;
+}
+.filter {
+  font-weight:bold;
+  padding:0 0.5em;
+}

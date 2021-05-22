@@ -1,3 +1,4 @@
+
 const makeAnimalList = templater(o=>`
 <div class="animallist-item display-flex animal-jump" data-id="${o.id}">
    <div class="flex-none animallist-image"><img src="${o.img}" alt=""></div>
@@ -7,7 +8,8 @@ const makeAnimalList = templater(o=>`
    </div>
    
 </div>
-`)
+`);
+
 
 const makeUserProfile = o => `
 <div class="user-profile-image">
@@ -46,6 +48,9 @@ const makeAnimalPopup = o => `
    </div>
 </div>
 `;
+
+
+
 
 // destructuring
 const FormControlInput = ({namespace,name,displayname,type,placeholder,value}) => {
