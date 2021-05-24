@@ -116,13 +116,16 @@ overscroll {
 }
 
 #signin-page{
-	background-image: url(../img/background2.jpg);
+	 background-color: #FEE9D3;;
 }
 #list-page{
-	background-image: url(../img/background1.png);
+	background-color: #e8e3e3;
 }
 #user-profile-page{
-	background-image: url(../img/profile.jpg)
+	background-image: url(../img/background2.jpg)
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 20vh;
 }
 
 /* Navigation Elements */
@@ -324,7 +327,13 @@ overscroll {
 }
 
 
-
+.user-profile-description{
+  margin-top: 20px;
+  text-align: center;
+}
+.ui-link:hover{
+  background-color: goldenrod;
+}
 
 .modal-drawer.modal-card {
   padding:1em;

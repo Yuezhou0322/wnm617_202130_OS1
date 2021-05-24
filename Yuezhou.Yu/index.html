@@ -30,6 +30,13 @@
 	<section data-role="page" id="signin-page">
       <div data-role="main" class="display-flex flex-vertical">
          <div class="flex-stretch"></div>
+         <div id="" style="margin-left: 140px; margin-top: 80px; ">
+               <img src="img/logo.png" style="width: 100px; height: 100px;">
+            </div>
+            <div style="margin-left: 60px;margin-top: 80px; font-size: 34px;">
+               Fine your pets here !
+            </div>
+
          <div class="flex-none">
             <form class="form" id="signin-form" data-ajax="false" style="padding:1em">
                <div class="form-control">
@@ -124,7 +131,7 @@
 
           <div class="modal" id="recent-drawer">
             <div class="modal-drawer modal-card top">
-               <div class="modal-body"></div>
+               <div class="modal-body" style="opacity: 0.9; background-color: gainsboro;"></div>
             </div>
          </div>
       </div>
@@ -133,29 +140,22 @@
 
    <section data-role="page" id="list-page">
       <header data-role="header">
-         <h1>Hamster Search</h1>
          <ul>
-            <li class="flex-stretch"></li>
-            <li><a href="#" class="js-list-add-animal"
-               data-activate="#list-add-modal">&plus;</a></li>
+            <li class="flex-stretch" style="padding-left:0.5em">
+               <form data-ajax="false" id="list-search" class="hotdog">
+                  <input type="search" id="list-search-value" data-role="none" placeholder="Search">
+               </form>
+            </li>
+            <li><a href="#animal-add-page" style="font-size:1.5em">&plus;</a></li>
          </ul>
+      </header>
+      <header data-role="header">
+         <ul class="filter-set"></ul>
       </header>
       <div data-role="main"><div class="overscroll">
          <div class="animallist"></div>
-         <!-- ul>li*10>a[href=#animal-profile-page]>{Animal $} -->
-         <ul>
-            <li><a href="#animal-profile-page">
-            <img src="img/logo3.jpg" style="width:100px;height: 100px">Hamster 1</a></li>
-            <li><a href="#animal-profile-page">
-            <img src="img/logo3.jpg" style="width:100px;height: 100px">Hamster 2</a></li>
-            <li><a href="#animal-profile-page">
-            <img src="img/logo3.jpg" style="width:100px;height: 100px">Hamster 3</a></li>
-            <li><a href="#animal-profile-page">
-            <img src="img/logo3.jpg" style="width:100px;height: 100px">Hamster 4</a></li>
-            <li><a href="#animal-profile-page">
-               <img src="img/logo3.jpg" style="width:100px;height: 100px">Hamster 5</a></li>
-            
       </div></div>
+
       <footer data-role="footer" data-template="#footer-template"></footer>
 
 
@@ -192,14 +192,18 @@
    <section data-role="page" id="user-profile-page">
       <div data-role="main">
          <div class="profile"></div>
-         <img src="img/logo2.png" style="width:200px; height:200px;position: center;">
-
+        
          <div>
             <i class="icon-swap map-icon"></i>
             <div class="sploofactive">
                <i class="icon-swap map-icon"></i>
             </div>
          </div>
+
+         <div style="margin-top: 100px;font-weight:bold;text-align: center;
+              border-top:3px double #f78e21; padding-top: 40px; padding-left: 50px;padding-right: 50px;font-size: 20px;">
+         
+         Pets are humanizing. They remind us we have an obligation and responsibility to preserve and nurture and care for all life.
 
 
          <div class="floater top right">
@@ -281,7 +285,7 @@
                   <input type="file" data-role="none" id="user-upload-input">
                </label>
                <label for="user-upload-input" class="floater bottom left">
-                  <img src="img/icon/camera.svg" alt="" class="icon">
+                  <img src="img/icon/camera.png" alt="" class="icon">
                </label>
             </form>
          </div>
@@ -307,7 +311,7 @@
          <div class="floater bottom right" style="font-size:1.5em">
                <form class="icon" data-ajax="false" id="animal-update-image-form">
                   <input type="file" id="animal-update-image-input" class="hidden" data-role="none">
-                  <label for="animal-update-image-input" style="margin:0"><img src="img/icon/pencil.svg" alt=""></label>
+                  <label for="animal-update-image-input" style="margin:0"><img src="img/icon/pencil.png" alt=""></label>
                </form>
             </div>
          </div>
