@@ -283,7 +283,7 @@
                   <input type="file" data-role="none" id="user-upload-input">
                </label>
                <label for="user-upload-input" class="floater bottom left">
-                  <img src="img/icon/camera.png" alt="" class="icon">
+                  <img src="img/icon/camera.svg" alt="" class="icon">
                </label>
             </form>
          </div>
@@ -295,21 +295,20 @@
 
    <!--  ANIMAL DATA SECTION -->
 
-   <section data-role="page" id="animal-profile-page">
+      <section data-role="page" id="animal-profile-page">
       <div data-role="main" class="display-flex flex-vertical">
          <div class="animal-top">
             <div class="floater top left header no-touch" style="background-image: linear-gradient(180deg, #ffffff96, #ffffff00);">
                <ul>
                   <li class="flex-none do-touch"><a href="#" data-rel="back">Back</a></li>
                   <li class="flex-stretch"></li>
-                  <li class="flex-none do-touch"><a href="#">Edit</a></li>
+                  <li class="flex-none do-touch"><a href="#animal-edit-page">Edit</a></li>
                </ul>
             </div>
-         </div>
-         <div class="floater bottom right" style="font-size:1.5em">
+            <div class="floater bottom right" style="font-size:1.5em">
                <form class="icon" data-ajax="false" id="animal-update-image-form">
                   <input type="file" id="animal-update-image-input" class="hidden" data-role="none">
-                  <label for="animal-update-image-input" style="margin:0"><img src="img/icon/pencil.png" alt=""></label>
+                  <label for="animal-update-image-input" style="margin:0"><img src="img/icon/pencil.svg" alt=""></label>
                </form>
             </div>
          </div>
@@ -319,7 +318,6 @@
                <li class="flex-stretch"><a href="#">info</a></li>
             </ul>
          </div>
-
          <div class="animal-bottom">
             <div class="animal-bottom-section animal-map">
                <div class="map"></div>
@@ -332,8 +330,7 @@
       </div>
    </section>
 
-
-<section data-role="page" id="animal-edit-page">
+   <section data-role="page" id="animal-edit-page">
       <header data-role="header">
          <h1>Edit Animal</h1>
          <ul>
@@ -348,8 +345,6 @@
          </div>
       </div>
    </section>
-
-
 
    <section data-role="page" id="animal-add-page">
       <header data-role="header">
@@ -369,6 +364,7 @@
          </div>
       </div>
    </section>
+
 
 
 

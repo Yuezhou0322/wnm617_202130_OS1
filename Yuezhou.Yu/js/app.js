@@ -3,8 +3,6 @@
 let core_pages = ["recent-page","list-page","user-profile-page"];
 
 
-
-
 // Document Ready
 $(()=>{
 
@@ -13,7 +11,7 @@ $(()=>{
    $(document)
 
 
-    .on("pagecontainerbeforeshow", function(event, ui) {
+   .on("pagecontainerbeforeshow", function(event, ui) {
       console.log(ui.toPage[0].id)
 
       $(".active").removeClass("active")
@@ -40,7 +38,7 @@ $(()=>{
    })
 
 
-  /* FORM SUBMITS */
+   /* FORM SUBMITS */
    .on("submit","#signin-form",function(e){
       e.preventDefault();
       checkSigninForm();
@@ -92,8 +90,6 @@ $(()=>{
          })
       })
    })
-
-
 
 
 
@@ -157,7 +153,8 @@ $(()=>{
 
 
 
-    /* DATA ACTIVATE */
+
+   /* DATA ACTIVATE */
    .on("click","[data-activate]",function(e){
       let target = $(this).data("activate");
       $(target).addClass("active");
@@ -173,7 +170,13 @@ $(()=>{
 
 
 
- $("[data-template]").each(function(){
+
+
+
+
+
+
+   $("[data-template]").each(function(){
       let id = $(this).data("template");
       let template = $(id).html();
       $(this).html(template);
