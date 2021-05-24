@@ -116,7 +116,10 @@ overscroll {
 }
 
 #signin-page{
-	 background-color: #FEE9D3;;
+	 background-image: url(../img/background2.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 0 10vh;
 }
 #list-page{
 	background-color: #e8e3e3;
@@ -126,6 +129,12 @@ overscroll {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 20vh;
+}
+.logo{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 /* Navigation Elements */
