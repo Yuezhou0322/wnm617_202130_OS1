@@ -11,7 +11,11 @@ $(()=>{
    $(document)
 
 
+<<<<<<< HEAD
    .on("pagecontainerbeforeshow", function(event, ui) {
+=======
+    .on("pagecontainerbeforeshow", function(event, ui) {
+>>>>>>> 8e03a812bd17e0f919f6c1846b42b25157824ab9
       console.log(ui.toPage[0].id)
 
       $(".active").removeClass("active")
@@ -38,7 +42,11 @@ $(()=>{
    })
 
 
+<<<<<<< HEAD
    /* FORM SUBMITS */
+=======
+ /* FORM SUBMITS */
+>>>>>>> 8e03a812bd17e0f919f6c1846b42b25157824ab9
    .on("submit","#signin-form",function(e){
       e.preventDefault();
       checkSigninForm();
@@ -151,7 +159,10 @@ $(()=>{
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8e03a812bd17e0f919f6c1846b42b25157824ab9
 
 
    /* DATA ACTIVATE */

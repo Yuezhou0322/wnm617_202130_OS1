@@ -89,6 +89,7 @@ const setMapBounds = (map_el,map_locs) => {
 
 
 let mapStyles = [
+<<<<<<< HEAD
 {
         "featureType": "landscape.man_made",
         "elementType": "geometry.fill",
@@ -161,11 +162,21 @@ let mapStyles = [
         "stylers": [
             {
                 "visibility": "on"
+=======
+    {
+        "stylers": [
+            {
+                "hue": "#2c3e50"
+            },
+            {
+                "saturation": 250
+>>>>>>> 8e03a812bd17e0f919f6c1846b42b25157824ab9
             }
         ]
     },
     {
         "featureType": "road",
+<<<<<<< HEAD
         "elementType": "geometry.fill",
         "stylers": [
             {
@@ -176,11 +187,21 @@ let mapStyles = [
             },
             {
                 "lightness": 99
+=======
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 50
+            },
+            {
+                "visibility": "simplified"
+>>>>>>> 8e03a812bd17e0f919f6c1846b42b25157824ab9
             }
         ]
     },
     {
         "featureType": "road",
+<<<<<<< HEAD
         "elementType": "geometry.stroke",
         "stylers": [
             {
@@ -226,5 +247,13 @@ let mapStyles = [
                 "color": "#89cada"
             }
         ]
+=======
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+>>>>>>> 8e03a812bd17e0f919f6c1846b42b25157824ab9
     }
 ];

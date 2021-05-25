@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8e03a812bd17e0f919f6c1846b42b25157824ab9
 const makeAnimalList = templater(o=>`
 <div class="animallist-item display-flex animal-jump" data-id="${o.id}">
    <div class="flex-none animallist-image"><img src="${o.img}" alt=""></div>
@@ -8,8 +11,12 @@ const makeAnimalList = templater(o=>`
    </div>
    
 </div>
+<<<<<<< HEAD
 `);
 
+=======
+`)
+>>>>>>> 8e03a812bd17e0f919f6c1846b42b25157824ab9
 
 const makeUserProfile = o => `
 <div class="user-profile-image">
@@ -49,6 +56,7 @@ const makeAnimalPopup = o => `
 </div>
 `;
 
+<<<<<<< HEAD
 
 
 
@@ -202,3 +210,5 @@ const makeFilterList = (animals) => {
    ${filterList(animals,'breed')}
    `
 }
+=======
+>>>>>>> 8e03a812bd17e0f919f6c1846b42b25157824ab9
